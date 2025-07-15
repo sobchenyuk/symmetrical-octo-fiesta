@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .title {
+            margin: 2rem;
+        }
+        .center {
+            text-align: center;
+        }
+        .button {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+<h1 class="title center">This text does not disappear until you press the button.</h1>
+<div class="center">
+    <button class="button" onclick="document.querySelector('.title').remove()">
+        Remove text
+    </button>
+</div>
+</body>
+</html>
