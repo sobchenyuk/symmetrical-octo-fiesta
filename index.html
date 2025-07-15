@@ -10,22 +10,14 @@
         .center {
             text-align: center;
         }
-        .button {
-            margin-top: 2rem;
-        }
     </style>
 </head>
 <body>
 <h1 class="title center">This text does not disappear until you press the button.</h1>
-<div class="center">
-    <button class="button" onclick="document.querySelector('.title').remove()">
-        Remove text
-    </button>
-</div>
 
 <script>
     setTimeout(() => {
-        document.querySelector('button').click()
+        document.querySelector('.title').remove()
     }, 1000 * 60 * 2)
 </script>
 </body>
